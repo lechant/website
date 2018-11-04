@@ -1,0 +1,179 @@
+<html>
+<head>
+<title>Cube</title>
+<link href="cube.css" rel="stylesheet">
+</head>
+<body>
+     <div class="scene">
+     <div class="cube">
+         <div class="cubeface front">front</div>
+         <div class="cubeface back">back</div>
+         <div class="cubeface left">left</div>
+         <div class="cubeface right">right</div>
+         <div class="cubeface up">up</div>
+         <div class="cubeface down">down</div>
+	 </div>
+	 </div>
+	 <div class="scene">
+     <div class="cube">
+         <div class="cubefacemini frontmini">front</div>
+         <div class="cubefacemini backmini">back</div>
+         <div class="cubefacemini leftmini">left</div>
+         <div class="cubefacemini rightmini">right</div>
+         <div class="cubefacemini upmini">up</div>
+         <div class="cubefacemini downmini">down</div>
+		 <div class="cubeface front">front</div>
+         <div class="cubeface back">back</div>
+         <div class="cubeface left">left</div>
+         <div class="cubeface right">right</div>
+         <div class="cubeface up">up</div>
+         <div class="cubeface down">down</div>
+	 </div>
+	 </div>
+	 <div class="scene">
+     <div class="cube">
+         <div class="cubeface front dirtside"></div>
+         <div class="cubeface back dirtside"></div>
+         <div class="cubeface left dirtside"></div>
+         <div class="cubeface right dirtside"></div>
+         <div class="cubeface up dirttop"></div>
+         <div class="cubeface down dirtbottom"></div>
+	 </div>
+	 </div>
+	 <div class="scene">
+     <div class="cube">
+         <div class="cubeface front redstone"></div>
+         <div class="cubeface back redstone"></div>
+         <div class="cubeface left redstone"></div>
+         <div class="cubeface right redstone"></div>
+         <div class="cubeface up redstone"></div>
+         <div class="cubeface down redstone"></div>
+	 </div>
+	 </div>
+	 <div class="scene">
+     <div class="cube">
+         <div class="cubeface front layton"></div>
+         <div class="cubeface back layton"></div>
+         <div class="cubeface left layton"></div>
+         <div class="cubeface right layton"></div>
+         <div class="cubeface up layton"></div>
+         <div class="cubeface down layton"></div>
+	 </div>
+	 </div>
+	 <div class="scene2">
+	 <div class="cube2">
+	     <div class="cubeface spreadfront"></div>
+	     <div class="cubeface spreadback"></div>
+	     <div class="cubeface spreadleft"></div>
+	     <div class="cubeface spreadright"></div>
+	     <div class="cubeface spreadup"></div>
+	     <div class="cubeface spreaddown"></div> 
+	 </div>
+	 </div>
+	  <div class="scene2">
+	 <div class="cube2">
+	     <div class="cubeface assemblefront">p_____</div>
+	     <div class="cubeface assembleback">_r____</div>
+	     <div class="cubeface assembleleft">__o___</div>
+	     <div class="cubeface assembleright">__t_</div>
+	     <div class="cubeface assembleup">___o</div>
+	     <div class="cubeface assembledown">_____1</div> 
+	 </div>
+	 </div>
+	 <div class="scene3">
+	 <div class="cube3">
+	     <div class="cubeface slidefront"></div>
+	     <div class="cubeface slideback"></div>
+	     <div class="cubeface slideleft"></div>
+	     <div class="cubeface slideright"></div>
+	     <div class="cubeface slideup"></div>
+	     <div class="cubeface slidedown"></div> 
+	 </div>
+	 </div>
+     
+<!--
+<html>
+<head>
+<style>
+body{
+	 user-select:none;
+}
+.scene{
+	 width:20px;
+	 height:20px;
+	 perspective:400px;
+	 margin-left:100px;
+	 margin-top:100px;
+}
+.cube{
+     width:100%;
+	 height:100%;
+	 transform-style:preserve-3d;	
+	 transform:translateZ(-10px);
+	 transition:transform 1s;
+	 animation-name:rotate;
+	 animation-duration:10s;
+	 animation-iteration-count:infinite;
+}
+.cubeface{
+	 position:absolute;
+	 width:100%;
+	 height:100%;
+	 line-height:200px;
+	 text-align:center;
+	 color:black;
+	 font-weight:bold;
+	 font-size:3px;
+	 border: 2px solid black;
+}
+.front{
+	 transform:rotateY(0deg) translateZ(10px);
+	 background-color:rgb(225,225,0,0.6);
+	 
+}	
+.back{
+     transform:rotateY(180deg) translateZ(10px);
+	 background-color:rgb(50,100,200,0.6);
+	 
+}
+.left{
+	 transform:rotateY(-90deg) translateZ(10px);
+	 background-color:rgb(0,200,200,0.6);
+	 
+}
+.right{
+	 transform:rotateY(90deg) translateZ(10px);
+	 background-color:rgb(200,100,50,0.6);
+}
+.up{
+	 transform:rotateX(90deg) translateZ(10px);
+	 background-color:rgb(50,50,50,0.6);
+}
+.down{
+	 transform:rotateX(-90deg) translateZ(10px);
+	 background-color:rgb(225,225,225,0.6);
+}
+@keyframes rotate{
+	 0%{transform:translateZ(-10px) rotatey(0deg);}
+	 50%{transform:translateZ(-10px) rotatey(360deg);}
+	 75%{transform:translateZ(-10px) rotatex(90deg);}
+	 100%{transform:translatez(-10px) rotatex(360deg);}
+}
+</style>
+</head>
+<body>
+<div class="scene">
+     <div class="cube">
+         <div class="cubeface front">front</div>
+         <div class="cubeface back">back</div>
+         <div class="cubeface left">left</div>
+         <div class="cubeface right">right</div>
+         <div class="cubeface up">up</div>
+         <div class="cubeface down">down</div>
+	 </div>
+	 </div>
+<body>
+</html>
+-->
+</body>
+</html>
